@@ -3,31 +3,54 @@ import Experience from "../components/experience"
 import ExperienceList from "../components/experience-list"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import GithubImage from "../components/github"
+import Info from "../components/info"
 
 const IndexPage = () => (
 	<Layout>
 		<SEO title="CV" />
 
-		<div>
-			{/* <div style={{ width: "1.5rem", display: 'inline-block', verticalAlign: 'middle', marginRight: 7 }}>
-				<GithubImage />
-			</div> */}
-			<a href="github.com/follgad">github.com/follgad</a>
+		<div className="flex">
+			<div className="flex-1 px-2">
+				<div className="flex justify-between items-center mb-3">
+					<h1 className="text-3xl text-gray-700">Emil Ahlbäck</h1>
+					<div><a href="https://follgad.github.io">https://follgad.github.io</a></div>
+				</div>
+
+				<div className="mb-3">
+					<Info icon="cil-location-pin">
+						Stockholm, Sweden
+					</Info>
+					<Info icon="cil-phone">
+						070-491 17 76
+					</Info>
+					<Info icon="cib-github">
+						github.com/follgad
+					</Info>
+				</div>
+
+				<p>
+					I'm a developer with an entrepreneural spirit.
+					I've been doing professional web development since 2016.
+				</p>
+				<p className="mt-2">
+					Best skills: Full-stack development, Linux, Node.js, Go
+				</p>
+			</div>
 		</div>
 
-		<div className="cols">
-			<div className="col">
+		<div className="flex flex-wrap">
+			<div className="flex-1 px-2">
 				<ExperienceList name="Experience">
 					<Experience
 						mainTitle="Redditors"
 						subTitle="Lead Developer, Channel Manager"
 						from="2019"
 						to="2019"
+						tags={["ffmpeg", "react", "mongodb"]}
 					>
 						<p>
-							I developed automation software for rendering the video-rendering
-							process and cut the time required per video by 90%.
+							I developed software to automate the video-rendering
+							process and cut the time required per video by over 90%.
 							I also helped manage the channel.
 						</p>
 					</Experience>
@@ -36,6 +59,7 @@ const IndexPage = () => (
 						subTitle="Co-founder, Developer"
 						from="2018"
 						link="https://tenfast.se"
+						tags={["mongodb", "vue", "unit testing", "stripe"]}
 					>
 						<p>
 							An estate management service we started working on in 2018.
@@ -45,14 +69,20 @@ const IndexPage = () => (
 						mainTitle="Tentium AB"
 						subTitle="Co-founder, Consulting"
 						from="2018"
+						tags={["web dev", ]}
 					>
-						<p>I co-founded Tentium and I build software for clients, mostly full-stack web applications and websites.</p>
+						<p>
+							I co-founded Tentium and I build software for clients,
+							mostly full-stack web applications and websites.
+							Spurdo sperde. My brollicking the bricks.
+						</p>
 					</Experience>
 					<Experience
 						mainTitle="Sjukvårdskonsulterna"
 						subTitle="Developer"
 						from="2016"
 						to="2017"
+						tags={["mongodb", "jquery", "keystonejs", "react-native"]}
 					>
 						<p>
 							Sjukvårdskonsulterna is a consulting firm in the healthcare sector.
@@ -65,6 +95,7 @@ const IndexPage = () => (
 						subTitle=""
 						from="Spring 2017"
 						to="Spring 2017"
+						tags={["react-native"]}
 					>
 						<p>
 							This was a project for school, where we developed an app
@@ -74,7 +105,7 @@ const IndexPage = () => (
 					</Experience>
 				</ExperienceList>
 			</div>
-			<div className="col">
+			<div className="flex-1 px-2">
 				<ExperienceList name="Education">
 					<Experience
 						mainTitle="Student at Kungliga Tekniska Högskolan"
@@ -93,6 +124,8 @@ const IndexPage = () => (
 						mainTitle="Bemi Is You"
 						from="2019"
 						to="2019"
+						link="https://github.com/FOLLGAD/bemi-is-you"
+						tags={["go", "pixi.js", "websockets"]}
 					>
 						<p>
 							A multiplayer puzzle game, inspired by the game "Baba Is You".
@@ -101,8 +134,9 @@ const IndexPage = () => (
 					</Experience>
 					<Experience
 						mainTitle="Bemilanche"
-						from="2018"
-						to="2018"
+						from="2017"
+						to="2017"
+						link="https://github.com/FOLLGAD/bemilanche"
 					>
 						<p>
 							A multiplayer arcade game based on jumping on falling blocks and avoiding death.

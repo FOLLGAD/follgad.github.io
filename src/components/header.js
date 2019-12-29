@@ -3,39 +3,19 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
-    className="no-print navbar"
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        color: '#eee',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `#eeeeee`,
-            textDecoration: `none`,
-          }}
-        >
+  <header className="print:hidden bg-blue-700 mb-4">
+    <div className="flex container mx-auto justify-between">
+      <div className="p-4">
+        <Link to="/" className="text-decoration-none text-gray-200 text-2xl font-semibold">
           {siteTitle}
         </Link>
-      </h1>
-      <div>
-        <Link
-          to="/cv"
-          style={{
-            color: `#eeeeee`,
-            textDecoration: `none`,
-          }}>
+      </div>
+
+      <div className="my-auto flex">
+        <Link to="/portfolio" className="mx-2 px-2 py-1 text-decoration-none text-gray-200">
+          Portfolio
+        </Link>
+        <Link to="/cv" className="mx-2 px-2 py-1 text-decoration-none text-gray-200">
           CV
         </Link>
       </div>
