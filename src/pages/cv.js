@@ -32,7 +32,7 @@ const IndexPage = () => (
 				</div>
 
 				<p>
-					I'm a developer with an entrepreneural spirit.
+					I'm a developer with an entrepreneurial spirit.
 					I've been doing professional web development since 2016.
 					Several projects which I've built are still running in production.
 					I love problem-solving and working with whatever
@@ -55,11 +55,6 @@ const IndexPage = () => (
 						tags={["ffmpeg", "react", "redux", "mongodb"]}
 					>
 						<p>
-							{/* 
-								Lite mer opersonligt,
-								gå in mer i att det är en Youtube-kanal
-
-							 */}
 							As the co-owner of a medium-sized Youtube channel.
 							We wanted a way to cut down the time required per-video,
 							so we developed software to automate the video-rendering
@@ -162,7 +157,7 @@ const IndexPage = () => (
 					>
 						<p>
 							A multiplayer arcade game based on jumping on falling blocks and avoiding death.
-							The game was written in vanilla javascript to improve my familiarity with the Canvas API.
+							The game was written from scratch in vanilla javascript.
 						</p>
 					</Experience>
 				</ExperienceList>
