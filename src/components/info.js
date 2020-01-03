@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
+require("@coreui/icons/css/all.min.css") // Because import doesnt work for this file for some reason
 
 // Takes in an object, converts all keys with a truthy values into a classname
 let className = (obj) => Object.keys(obj).filter(key => obj[key]).join(" ")
@@ -20,10 +21,12 @@ const Info = ({ children, icon, right }) => {
 
 Info.propTypes = {
 	icon: PropTypes.string,
+	right: PropTypes.bool,
 }
 
 Info.defaultProps = {
 	icon: ``,
+	right: false,
 }
 
 export default Info
