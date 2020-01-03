@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/index.js"],"names":["Portfolio"],"mappings":"2FAAA,uBAEeA,YAAf","file":"component---src-pages-index-js-1da1da177d3f0658c724.js","sourcesContent":["import Portfolio from './about'\n\nexport default Portfolio\n"],"sourceRoot":""}
