@@ -38,9 +38,6 @@ const IndexPage = () => (
 					I love problem-solving and working with whatever
 					tool fits the current task at hand.
 				</p>
-				<p className="mt-2">
-					Best skills: Full-stack development, Web development, Node.js, Linux
-				</p>
 			</div>
 		</div>
 
@@ -138,18 +135,28 @@ const IndexPage = () => (
 				</ExperienceList>
 				<ExperienceList name="Projects">
 					<Experience
-						mainTitle="Bemi Is You"
+						mainTitle="Bemi is You"
 						from="2019"
 						to="2019"
 						link="https://github.com/FOLLGAD/bemi-is-you"
 						tags={["go", "pixi.js", "websockets"]}
 					>
 						<p>
-							A multiplayer puzzle game, inspired by the game "Baba Is You".
+							An online multiplayer puzzle game, inspired by the game "Baba is You".
 							The backend was fully written in Go, using WebSockets for communication with the clients.
 						</p>
 					</Experience>
 					<Experience
+						mainTitle="Isle of Khan"
+						from="2016"
+						to="2016"
+						link="https://github.com/FOLLGAD/isle-of-khan"
+					>
+						<p>
+							An online multiplayer top-down shooter game. The first thing I ever made with Javascript.
+						</p>
+					</Experience>
+					{/* <Experience
 						mainTitle="Bemilanche"
 						from="2017"
 						to="2017"
@@ -159,12 +166,9 @@ const IndexPage = () => (
 							A multiplayer arcade game based on jumping on falling blocks and avoiding death.
 							The game was written from scratch in vanilla javascript.
 						</p>
-					</Experience>
+					</Experience> */}
 				</ExperienceList>
 				<ExperienceList name="Skills">
-					<Experience
-						mainTitle="Linux"
-						subTitle="Since a year back I've used linux for all my computers" />
 					<Experience
 						mainTitle="Javascript"
 						subTitle="I know my way around all aspects of the Javascript ecosystem" />
@@ -177,6 +181,12 @@ const IndexPage = () => (
 					<Experience
 						mainTitle="MongoDB"
 						subTitle="I've done extensive work using MongoDB" />
+					<Experience
+						mainTitle="Linux"
+						subTitle="Since a year back I've used linux for all my computers" />
+					<Experience
+						mainTitle="Functional Programming"
+						subTitle="I've dabbled with Haskell and frequently make use of functional approaches when coding" />
 				</ExperienceList>
 				<ExperienceList name="Languages">
 					<Experience
