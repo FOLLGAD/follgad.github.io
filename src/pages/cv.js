@@ -21,7 +21,7 @@ const IndexPage = () => (
 						Stockholm, Sweden
 					</Info>
 					<Info icon="cil-phone" right>
-						070-491 17 76
+						+46 70 491 17 76
 					</Info>
 					<Info icon="cil-envelope-closed" right>
 						<a href="mailto:ahlbac.emil@gmail.com">ahlback.emil@gmail.com</a>
@@ -32,11 +32,12 @@ const IndexPage = () => (
 				</div>
 
 				<p>
-					I'm a developer with an entrepreneurial spirit.
-					I've been doing professional web development since 2016.
-					Several projects which I've built are still running in production.
-					I love problem-solving and working with whatever
-					tool fits the current task at hand.
+					I'm a 20-year-old developer with an entrepreneurial spirit.
+					I've been doing full-stack web development professionally since 2016.
+					I love problem-solving and am constantly looking to learn new things.
+				</p>
+				<p className="pt-1">
+					I am currently looking for an internship or job to further improve my skillset.
 				</p>
 			</div>
 		</div>
@@ -49,41 +50,41 @@ const IndexPage = () => (
 						subTitle="Lead Developer, Channel Manager"
 						from="2019"
 						to="2019"
-						tags={["ffmpeg", "react", "redux", "mongodb"]}
+						tags={["ffmpeg", "react", "redux"]}
 					>
 						<p>
-							As the co-owner of a medium-sized Youtube channel.
+							I co-founded a fairly successful Youtube channel, where we
+							publish daily videos about popular reddit threads.
 							We wanted a way to cut down the time required per-video,
-							so we developed software to automate the video-rendering
-							process using the tool ffmpeg. We also wrote a frontend UI
-							to facilitate the process further.
+							so I developed a program in order to render new videos
+							with minimal manual effort required.
+							We have a hosted frontend written in React
+							with a backend written in Node.
 						</p>
 					</Experience>
 					<Experience
 						mainTitle="TenFAST — Estate Management"
-						subTitle="Co-founder, Developer"
+						// subTitle=""
 						from="2018"
 						link="https://tenfast.se"
-						tags={["mongodb", "vue", "nuxt.js", "unit testing", "stripe"]}
+						tags={["mongodb", "vue", "unit testing", "stripe"]}
 					>
 						<p>
-							An estate management service we started working on in 2018
-							with several active customers.
-							It's the largest project I've worked on so far.
+							An estate management service we started working on in 2018,
+							currently with several active customers.
 							The front-end interface is written in Nuxt.js,
-							and the backend in Node.js and Mongoose.
+							and the backend in Node.js.
 						</p>
 					</Experience>
 					<Experience
 						mainTitle="Tentium AB"
-						subTitle="Co-founder, Consulting"
+						subTitle="Co-founder"
 						from="2018"
 						tags={["web dev"]}
 					>
 						<p>
-							In Tentium, which I co-founded, we build software for clients,
-							mostly full-stack web applications and websites,
-							with the occasional graphical design.
+							At Tentium, we build software for clients,
+							mainly websites and full-stack web applications.
 						</p>
 					</Experience>
 					<Experience
@@ -107,7 +108,7 @@ const IndexPage = () => (
 						subTitle=""
 						from="Spring 2017"
 						to="Spring 2017"
-						tags={["react-native"]}
+						tags={["react-native", "react"]}
 					>
 						<p>
 							This was a project for school, where we developed an app
@@ -134,6 +135,7 @@ const IndexPage = () => (
 					/>
 				</ExperienceList>
 				<ExperienceList name="Projects">
+					<p className="mt-2 text-gray-900">I've done many projects just for fun. Here are two of them:</p>
 					<Experience
 						mainTitle="Bemi is You"
 						from="2019"
@@ -143,17 +145,18 @@ const IndexPage = () => (
 					>
 						<p>
 							An online multiplayer puzzle game, inspired by the game "Baba is You".
+							You modify the rules of the game by rearranging blocks of text, and use this to win the levels.
 							The backend was fully written in Go, using WebSockets for communication with the clients.
 						</p>
 					</Experience>
 					<Experience
-						mainTitle="Isle of Khan"
-						from="2016"
-						to="2016"
-						link="https://github.com/FOLLGAD/isle-of-khan"
+						mainTitle="Bemilanche"
+						from="2017"
+						to="2017"
+						link="https://github.com/FOLLGAD/bemilanche"
 					>
 						<p>
-							An online multiplayer top-down shooter game. The first thing I ever made with Javascript.
+							An online multiplayer top-down shooter game. The first thing I ever made with Javascript or Node.
 						</p>
 					</Experience>
 					{/* <Experience
@@ -171,22 +174,19 @@ const IndexPage = () => (
 				<ExperienceList name="Skills">
 					<Experience
 						mainTitle="Javascript"
-						subTitle="I know my way around all aspects of the Javascript ecosystem" />
+						subTitle="I have great experience with the Javascript/Node.js ecosystem" />
 					<Experience
 						mainTitle="Web Development"
 						subTitle="I've developed and designed many websites and web apps" />
 					<Experience
-						mainTitle="React + Redux"
-						subTitle="I've used React and Redux in multiple projects" />
+						mainTitle="React, Redux"
+						subTitle="I've used modern technologies like React and Redux in multiple projects" />
 					<Experience
-						mainTitle="MongoDB"
-						subTitle="I've done extensive work using MongoDB" />
+						mainTitle="Databases"
+						subTitle="I know my way around both NoSQL and SQL databases" />
 					<Experience
 						mainTitle="Linux"
-						subTitle="Since a year back I've used linux for all my computers" />
-					<Experience
-						mainTitle="Functional Programming"
-						subTitle="I've dabbled with Haskell and frequently make use of functional approaches when coding" />
+						subTitle="Since a year back I've used Linux for all my computers" />
 				</ExperienceList>
 				<ExperienceList name="Languages">
 					<Experience
