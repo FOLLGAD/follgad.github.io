@@ -20,7 +20,7 @@ const Experience = ({ mainTitle, subTitle, from, to, link, children, tags }) => 
 		<div className="pt-3">
 			<div className="text-lg font-bold text-gray-700">
 				{link
-					? <a href={link} target="_blank" target="noopener noreferrer">{mainTitle} {linkIcon}</a>
+					? <a href={link} target="_blank" rel="noopener noreferrer">{mainTitle} {linkIcon}</a>
 					: mainTitle}
 			</div>
 			<div className="text-gray-600 tracking-tight">
@@ -31,7 +31,7 @@ const Experience = ({ mainTitle, subTitle, from, to, link, children, tags }) => 
 			<div className="">
 				{children}
 			</div>
-			{tags && tags.length && <div className="mt-2 mb-1 flex">
+			{tags.length > 0 && <div className="mt-2 mb-1 flex items-center flex-wrap">
 				{tags.map(tag =>
 					<div key={tag} className="text-xs text-gray-700 mr-2 my-2 py-2 px-3 bg-gray-200 rounded-full">{tag}</div> 
 				)}
@@ -44,12 +44,14 @@ Experience.propTypes = {
 	mainTitle: PropTypes.string,
 	subTitle: PropTypes.string,
 	timeTitle: PropTypes.string,
+	tags: PropTypes.array,
 }
 
 Experience.defaultProps = {
 	mainTitle: ``,
 	subTitle: ``,
 	timeTitle: ``,
+	tags: [],
 }
 
 export default Experience

@@ -16,14 +16,16 @@ const Layout = ({ children }) => {
     }
   `)
 
+  // let year = (new Date()).getFullYear()
+
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="container mx-auto content-container">
         <main>{children}</main>
-        <footer>
-          {/* Emil Ahlbäck, 2019 */}
-        </footer>
+        {/* <footer>
+          Emil Ahlbäck, {year}
+        </footer> */}
       </div>
     </>
   )
