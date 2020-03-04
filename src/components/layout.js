@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="container mx-auto">
+      <div className="container mx-auto content-container">
         <main>{children}</main>
         <footer>
           {/* Emil Ahlbäck, 2019 */}

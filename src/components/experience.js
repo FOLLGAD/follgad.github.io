@@ -13,7 +13,7 @@ const Experience = ({ mainTitle, subTitle, from, to, link, children, tags }) => 
 			? from === to
 				? from
 				: `${from} - ${to}`
-			: `Since ${from}`)
+			: `${from} - Present`)
 		: null
 
 	return (
@@ -31,9 +31,9 @@ const Experience = ({ mainTitle, subTitle, from, to, link, children, tags }) => 
 			<div className="">
 				{children}
 			</div>
-			{tags && tags.length && <div className="mt-2 mb-1">
+			{tags && tags.length && <div className="mt-2 mb-1 flex">
 				{tags.map(tag =>
-					<div key={tag} className="text-xs text-gray-700 inline-block mr-2 my-2 py-2 px-3 bg-gray-200 rounded-full">{tag}</div> 
+					<div key={tag} className="text-xs text-gray-700 mr-2 my-2 py-2 px-3 bg-gray-200 rounded-full">{tag}</div> 
 				)}
 			</div>}
 		</div>

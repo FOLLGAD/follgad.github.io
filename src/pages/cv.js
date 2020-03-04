@@ -4,14 +4,16 @@ import ExperienceList from "../components/experience-list"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Info from "../components/info"
+import Sublist from "../components/sublist"
+import SublistItem from "../components/sublist-item"
 
 const IndexPage = () => (
 	<Layout>
-		<SEO />
+		<SEO title="CV"/>
 
 		<div className="flex">
 			<div className="flex-1 px-4">
-				<div className="text-3xl text-gray-700 mb-3 inline-block">Emil Ahlbäck</div>
+				<div className="text-5xl text-gray-700 mb-3 inline-block">Emil Ahlbäck</div>
 
 				<div className="mb-3 float-right text-right">
 					<Info right>
@@ -24,7 +26,7 @@ const IndexPage = () => (
 						+46 70 491 17 76
 					</Info>
 					<Info icon="cil-envelope-closed" right>
-						<a href="mailto:ahlbac.emil@gmail.com">ahlback.emil@gmail.com</a>
+						<a href="mailto:ahlback.emil@gmail.com">ahlback.emil@gmail.com</a>
 					</Info>
 					<Info icon="cib-github" right>
 						<a href="https://github.com/follgad">github.com/follgad</a>
@@ -32,91 +34,93 @@ const IndexPage = () => (
 				</div>
 
 				<p>
-					I'm a 20-year-old developer with an entrepreneurial spirit.
-					I've been doing full-stack web development professionally since 2016.
-					I love problem-solving and am constantly looking to learn new things.
-				</p>
-				<p className="pt-1">
-					I am currently looking for an internship or job to further improve my skillset.
+					I'm a 20-year-old developer with an entrepreneurial spirit, and I started doing full-stack web development professionally when I was 16.
+					I love problem-solving and am constantly looking to learn things and find new problems to solve.
 				</p>
 			</div>
 		</div>
 
 		<div className="flex flex-wrap">
-			<div className="flex-1 px-4">
+			<div className="flex-1 px-4 basis-25">
 				<ExperienceList name="Experience">
 					<Experience
-						mainTitle="Redditors"
-						subTitle="Lead Developer, Channel Manager"
-						from="2019"
-						to="2019"
-						tags={["ffmpeg", "react", "redux"]}
+						mainTitle="Lead Developer — Redditors"
+						link="https://www.youtube.com/channel/UCmu_67Qpj7xBn7WxUoRi8FQ"
+						from="Apr 2019"
+						tags={["React", "Redux", "Node.js", "ffmpeg"]}
 					>
 						<p>
-							I co-founded a fairly successful Youtube channel, where we
-							publish daily videos about popular reddit threads.
-							We wanted a way to cut down the time required per-video,
-							so I developed a program in order to render new videos
-							with minimal manual effort required.
-							We have a hosted frontend written in React
-							with a backend written in Node.
+							Redditors is a Youtube channel I co-founded together with a friend.
 						</p>
+						<Sublist>
+							<SublistItem>I <a className="text-blue-600" href="https://app.redditvideomaker.com/">developed a tool</a> to cut down the editing time down to below 15 min per video (decreased by over 80%) while simultaneously improving the viewer experience</SublistItem>
+							<SublistItem>This has enabled us to reach a total of 75 000 subscribers and 32 million views as of March 2020</SublistItem>
+						</Sublist>
 					</Experience>
 					<Experience
-						mainTitle="TenFAST — Estate Management"
-						// subTitle=""
+						mainTitle="Co-founder, Developer — TenFAST"
 						from="2018"
 						link="https://tenfast.se"
-						tags={["mongodb", "vue", "unit testing", "stripe"]}
+						tags={["MongoDB", "Node.js", "Nuxt.js", "Vue", "Stripe"]}
 					>
 						<p>
-							An estate management service we started working on in 2018,
-							currently with several active customers.
+							A modern real-estate management system we started working on in 2018,
+							currently with several paying customers.
 							The front-end interface is written in Nuxt.js,
 							and the backend in Node.js.
 						</p>
-					</Experience>
-					<Experience
-						mainTitle="Tentium AB"
-						subTitle="Co-founder"
-						from="2018"
-						tags={["web dev"]}
-					>
 						<p>
-							At Tentium, we build software for clients,
-							mainly websites and full-stack web applications.
+							TenFAST is a member of the <a className="text-blue-600" href="https://www.kth.se/en/innovation">KTH Innovation</a> pre-incubation program.
 						</p>
 					</Experience>
 					<Experience
-						mainTitle="Sjukvårdskonsulterna"
-						subTitle="Developer"
-						from="2016"
-						to="2017"
-						tags={["mongodb", "jquery", "keystonejs", "react-native"]}
+						mainTitle="Developer — Sjukvårdskonsulterna"
+						link="https://sjukvardskonsulterna.se"
+						from="Dec 2016"
+						to="2018"
+						tags={["React Native", "jQuery", "MongoDB", "Keystone.js", "Node"]}
 					>
 						<p>
-							Sjukvårdskonsulterna is a consulting firm in the healthcare sector.
-							We developed their entire web system from scratch.
-							It's currently being used for many of
-							the daily tasks of both management and the consultants,
-							including time-tracking, sending announcements and publishing assignments.
-							The project is written in Node.js using KeystoneJS.
+							Sjukvårdskonsulterna is a consulting firm in the healthcare sector,
+							for whom we developed their entire web system from scratch.
+						</p>
+						<Sublist>
+							<SublistItem>
+								Used routinely for many tasks of both management and the consultants,
+								including time-tracking, sending announcements, and publishing and finding assignments
+							</SublistItem>
+							<SublistItem>
+								In production since 2017
+							</SublistItem>
+							<SublistItem>
+								We built an accompanying app in React Native
+							</SublistItem>
+						</Sublist>
+					</Experience>
+					<Experience
+						mainTitle="Co-founder, Web Developer — Tentium AB"
+						link="https://tentium.se"
+						from="2018"
+						tags={["Web Development", "Graphic Design"]}
+					>
+						<p>
+							At Tentium, we build software for clients, mainly websites and full-stack web applications.
 						</p>
 					</Experience>
 					<Experience
 						mainTitle="Inventory Management Tool for ABB"
-						subTitle=""
 						from="Spring 2017"
 						to="Spring 2017"
-						tags={["react-native", "react"]}
+						tags={["React Native", "React"]}
 					>
 						<p>
-							This was a project for school, where we developed an app
-							in React Native with the capacity of scanning QR codes
-							and displaying related information from a database.
-							As a companion to this app we developed a web app for
-							searching and entering new data into the database.
+							This app was developed as a project for high-school. The app connected to a Node API and a database,
+							to allow quick lookup of inventory items, in order to facilitate inventory management at ABB.
 						</p>
+						<Sublist>
+							<SublistItem>The app was written with React Native</SublistItem>
+							<SublistItem>Presented a working prototype for the president of ABB Sweden</SublistItem>
+						</Sublist>
 					</Experience>
 				</ExperienceList>
 			</div>
@@ -128,35 +132,25 @@ const IndexPage = () => (
 						from="2018"
 					/>
 					<Experience
-						mainTitle="ABB Industrigymnasium, Technology Programme"
+						mainTitle="Technology Programme, ABB Industrigymnasium"
 						subTitle="Västerås, Sweden"
 						from="2015"
 						to="2018"
 					/>
 				</ExperienceList>
-				<ExperienceList name="Projects">
-					<p className="mt-2 text-gray-900">I've done many projects just for fun. Here are two of them:</p>
+				<ExperienceList name="Other projects">
+					{/* <p className="mt-2 text-gray-900">I've done many projects just for fun:</p> */}
 					<Experience
 						mainTitle="Bemi is You"
 						from="2019"
 						to="2019"
 						link="https://github.com/FOLLGAD/bemi-is-you"
-						tags={["go", "pixi.js", "websockets"]}
+						tags={["Go", "WebSockets", "pixi.js"]}
 					>
 						<p>
-							An online multiplayer puzzle game, inspired by the game "Baba is You".
-							You modify the rules of the game by rearranging blocks of text, and use this to win the levels.
+							An online multiplayer puzzle game, where the game rules are 
+							dynamically modified by rearranging blocks of text.
 							The backend was fully written in Go, using WebSockets for communication with the clients.
-						</p>
-					</Experience>
-					<Experience
-						mainTitle="Bemilanche"
-						from="2017"
-						to="2017"
-						link="https://github.com/FOLLGAD/bemilanche"
-					>
-						<p>
-							An online multiplayer top-down shooter game. The first thing I ever made with Javascript or Node.
 						</p>
 					</Experience>
 					{/* <Experience
@@ -173,25 +167,25 @@ const IndexPage = () => (
 				</ExperienceList>
 				<ExperienceList name="Skills">
 					<Experience
-						mainTitle="Javascript"
-						subTitle="I have great experience with the Javascript/Node.js ecosystem" />
+						mainTitle="Javascript/Node.js"
+					>
+						I have a long experience using the Javascript/Node.js ecosystem
+					</Experience>
 					<Experience
-						mainTitle="Web Development"
-						subTitle="I've developed and designed many websites and web apps" />
-					<Experience
-						mainTitle="React, Redux"
-						subTitle="I've used modern technologies like React and Redux in multiple projects" />
-					<Experience
-						mainTitle="Databases"
-						subTitle="I know my way around both NoSQL and SQL databases" />
+						mainTitle="React"
+					>
+						My stack of choice is React and Node.js
+					</Experience>
 					<Experience
 						mainTitle="Linux"
-						subTitle="Since a year back I've used Linux for all my computers" />
+					>
+						I prefer the freedom of Linux over other OSes, so since 2018 I've used Linux for all my computers
+					</Experience>
 				</ExperienceList>
 				<ExperienceList name="Languages">
 					<Experience
 						mainTitle="Swedish"
-						subTitle="Native" />
+						subTitle="Native Fluency" />
 					<Experience
 						mainTitle="English"
 						subTitle="Full Fluency" />

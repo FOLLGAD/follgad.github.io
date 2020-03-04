@@ -1,3 +1,3 @@
-import Portfolio from './about'
+import Portfolio from './cv'
 
 export default Portfolio
