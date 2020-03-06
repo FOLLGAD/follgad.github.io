@@ -74,7 +74,7 @@ const IndexPage = () => (
 						</p>
 					</Experience>
 					<Experience
-						mainTitle="Developer — Sjukvårdskonsulterna"
+						mainTitle="Full-stack developer — Sjukvårdskonsulterna"
 						link="https://sjukvardskonsulterna.se"
 						from="Dec 2016"
 						to="2018"
@@ -98,7 +98,7 @@ const IndexPage = () => (
 						</Sublist>
 					</Experience>
 					<Experience
-						mainTitle="Co-founder, Web Developer — Tentium AB"
+						mainTitle="Co-founder, Full-stack developer — Tentium AB"
 						link="https://tentium.se"
 						from="2018"
 						tags={["Web Development", "Graphic Design"]}
