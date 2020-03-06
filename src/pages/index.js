@@ -1,3 +1,3 @@
-import Portfolio from './cv'
+import Resume from './resume'
 
-export default Portfolio
+export default Resume

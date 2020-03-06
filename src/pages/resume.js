@@ -9,7 +9,7 @@ import SublistItem from "../components/sublist-item"
 
 const IndexPage = () => (
 	<Layout>
-		<SEO title="CV"/>
+		<SEO title="Resume" />
 
 		<div className="flex">
 			<div className="flex-1 px-4">
@@ -53,25 +53,29 @@ const IndexPage = () => (
 							Redditors is a Youtube channel I co-founded together with a friend.
 						</p>
 						<Sublist>
-							<SublistItem>I <a className="text-blue-600" href="https://app.redditvideomaker.com/">developed a tool</a> to cut down the editing time down to below 15 min per video (decreased by over 80%) while simultaneously improving the viewer experience</SublistItem>
+							<SublistItem>I <a className="text-blue-600" href="https://app.redditvideomaker.com/">developed a tool</a> to cut down the editing time and allow creating videos from anywhere</SublistItem>
+							<SublistItem>Cut down the time requried to below 15 min per video (decreased by over 80%) while simultaneously improving the viewer experience</SublistItem>
 							<SublistItem>This has enabled us to reach a total of 75 000 subscribers and 32 million views as of March 2020</SublistItem>
 						</Sublist>
 					</Experience>
 					<Experience
-						mainTitle="Co-founder, Developer — TenFAST"
+						mainTitle="Co-founder, Full-stack developer — TenFAST"
 						from="2018"
 						link="https://tenfast.se"
 						tags={["MongoDB", "Node.js", "Nuxt.js", "Vue", "Stripe"]}
 					>
 						<p>
-							A modern real-estate management system we started working on in 2018,
+							A modern real-estate management system we started building in 2018,
 							currently with several paying customers.
-							The front-end interface is written in Nuxt.js,
-							and the backend in Node.js.
 						</p>
-						<p>
-							TenFAST is a member of the <a className="text-blue-600" href="https://www.kth.se/en/innovation">KTH Innovation</a> pre-incubation program.
-						</p>
+						<Sublist>
+							<SublistItem>
+								The front-end is written with Nuxt.js, with a Node.js Express API in the backend.
+							</SublistItem>
+							<SublistItem>
+								TenFAST is a member of the <a className="text-blue-600" href="https://www.kth.se/en/innovation">KTH Innovation</a> pre-incubation program.
+							</SublistItem>
+						</Sublist>
 					</Experience>
 					<Experience
 						mainTitle="Full-stack developer — Sjukvårdskonsulterna"
@@ -81,13 +85,15 @@ const IndexPage = () => (
 						tags={["React Native", "jQuery", "MongoDB", "Keystone.js", "Node"]}
 					>
 						<p>
-							Sjukvårdskonsulterna is a consulting firm in the healthcare sector,
-							for whom we developed their entire web system from scratch.
+							Sjukvårdskonsulterna is a consulting firm in the healthcare sector.
 						</p>
 						<Sublist>
 							<SublistItem>
+								Developed their entire web system from scratch
+							</SublistItem>
+							<SublistItem>
 								Used routinely for many tasks of both management and the consultants,
-								including time-tracking, sending announcements, and publishing and finding assignments
+								including time-tracking, and publishing and finding assignments
 							</SublistItem>
 							<SublistItem>
 								In production since 2017
@@ -104,7 +110,8 @@ const IndexPage = () => (
 						tags={["Web Development", "Graphic Design"]}
 					>
 						<p>
-							At Tentium, we build software for clients, mainly websites and full-stack web applications.
+							At Tentium, we build software for clients.
+							We're a team of two, focusing mainly on building full-stack development solutions.
 						</p>
 					</Experience>
 					<Experience
@@ -148,7 +155,7 @@ const IndexPage = () => (
 						tags={["Go", "WebSockets", "pixi.js"]}
 					>
 						<p>
-							An online multiplayer puzzle game, where the game rules are 
+							An online multiplayer puzzle game, where the game rules are
 							dynamically modified by rearranging blocks of text.
 							The backend was fully written in Go, using WebSockets for communication with the clients.
 						</p>

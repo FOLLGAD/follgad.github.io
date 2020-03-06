@@ -15,8 +15,8 @@ const Header = ({ siteTitle }) => (
         {/* <Link to="/about" className="mx-2 px-2 py-1 text-decoration-none text-gray-200">
           About me
         </Link> */}
-        <Link to="/cv" className="mx-2 px-2 py-1 text-decoration-none text-gray-200">
-          CV
+        <Link to="/resume" className="mx-2 px-2 py-1 text-decoration-none text-gray-200">
+          Resume
         </Link>
       </div>
     </div>
