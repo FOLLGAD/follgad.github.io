@@ -85,7 +85,7 @@ const IndexPage = () => (
 						link="https://sjukvardskonsulterna.se"
 						from="Dec 2016"
 						to="2018"
-						tags={["React Native", "jQuery", "MongoDB", "Keystone.js", "Node"]}
+						tags={["React Native", "jQuery", "MongoDB", "Keystone.js", "Node.js"]}
 					>
 						<p>
 							Sjukvårdskonsulterna is a consulting firm in the healthcare sector.
