@@ -31,10 +31,13 @@ const IndexPage = () => (
 					<Info icon="cib-github" right>
 						<a href="https://github.com/follgad">github.com/follgad</a>
 					</Info>
+					<Info icon="cib-linkedin" right>
+						<a href="https://linkedin.com/in/emil-ahlback">linkedin.com/in/emil-ahlback</a>
+					</Info>
 				</div>
 
 				<p>
-					I'm a 20-year-old developer with an entrepreneurial spirit, and I started doing full-stack web development professionally when I was 16.
+					I'm a developer with an entrepreneurial spirit, and I started doing full-stack web development professionally when I was 16.
 					I love problem-solving and am constantly looking to learn things and find new problems to solve.
 				</p>
 			</div>
@@ -55,7 +58,7 @@ const IndexPage = () => (
 						<Sublist>
 							<SublistItem>I <a className="text-blue-600" href="https://app.redditvideomaker.com/">developed a tool</a> to cut down the editing time and allow creating videos from anywhere</SublistItem>
 							<SublistItem>Cut down the time requried to below 15 min per video (decreased by over 80%) while simultaneously improving the viewer experience</SublistItem>
-							<SublistItem>This has enabled us to reach a total of 75 000 subscribers and 32 million views as of March 2020</SublistItem>
+							<SublistItem>This has enabled us to go from 0 subscribers and views to 75 000 subscribers and 32 million views in just 10 months.</SublistItem>
 						</Sublist>
 					</Experience>
 					<Experience
