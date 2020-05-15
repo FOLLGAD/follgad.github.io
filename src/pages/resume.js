@@ -69,7 +69,7 @@ const IndexPage = () => (
 					>
 						<p>
 							A modern real-estate management system we started building in 2018,
-							currently with several paying customers.
+							with paying customers ranging from small business owners to Swedish municipalities.
 						</p>
 						<Sublist>
 							<SublistItem>
@@ -121,7 +121,7 @@ const IndexPage = () => (
 						mainTitle="Inventory Management Tool for ABB"
 						from="Spring 2017"
 						to="Spring 2017"
-						tags={["React Native", "React"]}
+						tags={["React Native", "Vue.js"]}
 					>
 						<p>
 							This app was developed as a project for high-school. The app connected to a Node API and a database,
