@@ -37,7 +37,7 @@ const IndexPage = () => (
 				</div>
 
 				<p>
-					I'm a developer with an entrepreneurial spirit, and I started doing full-stack web development professionally when I was 16.
+					I'm a developer with an entrepreneurial spirit. I've been doing professional web development since 4 years back.
 					I love problem-solving and am constantly looking to learn things and find new problems to solve.
 				</p>
 			</div>
@@ -47,29 +47,40 @@ const IndexPage = () => (
 			<div className="flex-1 px-4 basis-25">
 				<ExperienceList name="Experience">
 					<Experience
+						mainTitle="Web Developer — Video.io"
+						from="Aug 2020"
+						link="https://video.io"
+						tags={["React", "UX", "GCP", "Node.js"]}
+					>
+						<p>
+							Worked together with a team with desginers and backend devs to create some customer facing products.
+						</p>
+					</Experience>
+					<Experience
 						mainTitle="Lead Developer — Redditors"
 						link="https://www.youtube.com/channel/UCmu_67Qpj7xBn7WxUoRi8FQ"
 						from="Apr 2019"
 						tags={["React", "Redux", "Node.js", "ffmpeg"]}
 					>
 						<p>
-							Redditors is a Youtube channel I co-founded together with a friend.
+							Redditors is a Youtube channel I co-founded.
 						</p>
 						<Sublist>
 							<SublistItem>I <a className="text-blue-600" href="https://app.redditvideomaker.com/">developed a tool</a> to cut down the editing time and allow creating videos from anywhere</SublistItem>
 							<SublistItem>Cut down the time requried to below 15 min per video (decreased by over 80%) while simultaneously improving the viewer experience</SublistItem>
-							<SublistItem>This has enabled us to go from 0 subscribers and views to 75 000 subscribers and 32 million views in just 10 months.</SublistItem>
+							<SublistItem>This has enabled us to go from 0 subscribers and views to 100k subscribers and 40 million views in just a year.</SublistItem>
 						</Sublist>
 					</Experience>
 					<Experience
 						mainTitle="Co-founder, Full-stack developer — TenFAST"
 						from="2018"
+						to="2020"
 						link="https://tenfast.se"
 						tags={["MongoDB", "Node.js", "Nuxt.js", "Vue", "Stripe"]}
 					>
 						<p>
 							A modern real-estate management system we started building in 2018,
-							with paying customers ranging from small business owners to Swedish municipalities.
+							with paying customers varying from small business owners to Swedish municipalities.
 						</p>
 						<Sublist>
 							<SublistItem>
@@ -148,7 +159,7 @@ const IndexPage = () => (
 						to="2018"
 					/>
 				</ExperienceList>
-				<ExperienceList name="Other projects">
+				<ExperienceList name="For fun">
 					{/* <p className="mt-2 text-gray-900">I've done many projects just for fun:</p> */}
 					<Experience
 						mainTitle="Bemi is You"
@@ -189,7 +200,7 @@ const IndexPage = () => (
 					<Experience
 						mainTitle="Linux"
 					>
-						I prefer the freedom of Linux over other OSes, so since 2018 I've used Linux for all my computers
+						I prefer the freedom of Linux over other OSes, so since 2018 I've opted to use Linux exclusively
 					</Experience>
 				</ExperienceList>
 				<ExperienceList name="Languages">
