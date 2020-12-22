@@ -13,7 +13,7 @@ const IndexPage = () => (
 
 		<div className="flex">
 			<div className="flex-1 px-4">
-				<div className="text-5xl text-gray-700 mb-3 inline-block">Emil Ahlbäck</div>
+				<div className="text-5xl text-gray-700 mb-6 mt-3 inline-block">Emil Ahlbäck</div>
 
 				<div className="mb-3 float-right text-right">
 					<Info right>
@@ -200,7 +200,7 @@ const IndexPage = () => (
 					<Experience
 						mainTitle="Linux"
 					>
-						I prefer the freedom of Linux over other OSes, so since 2018 I've opted to use Linux exclusively
+						I prefer the freedom of Linux over other OSes, and since 2018 I've opted to use Linux exclusively
 					</Experience>
 				</ExperienceList>
 				<ExperienceList name="Languages">

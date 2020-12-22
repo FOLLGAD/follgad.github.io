@@ -35,10 +35,10 @@ const Experience = ({
             {mainTitle} {linkIcon}
           </a>
         ) : (
-          mainTitle
-        )}
+            mainTitle
+          )}
       </div>
-      <div className="text-gray-600 tracking-tight">
+      <div className="text-gray-500 tracking-tight">
         {timeTitle}
         {subTitle && timeTitle && " | "}
         {subTitle}
@@ -49,7 +49,7 @@ const Experience = ({
           {tags.map(tag => (
             <div
               key={tag}
-              className="text-xs text-gray-700 mr-2 my-2 py-2 px-3 bg-gray-200 rounded-full"
+              className="text-xs text-gray-700 mr-2 my-2 py-2 px-3 bg-gray-100 rounded-full"
             >
               {tag}
             </div>

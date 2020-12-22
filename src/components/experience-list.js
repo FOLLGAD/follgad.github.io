@@ -3,17 +3,17 @@ import React from "react"
 
 const ExperienceList = ({ children, name }) => (
 	<div className="mb-6 mt-4">
-		<h2 className="text-base uppercase tracking-widest font-bold text-blue-400">{name}</h2>
+		<h2 className="text-base uppercase tracking-widest font-bold text-blue-500">{name}</h2>
 		{children}
 	</div>
 )
 
 ExperienceList.propTypes = {
-  name: PropTypes.string,
+	name: PropTypes.string,
 }
 
 ExperienceList.defaultProps = {
-  name: ``,
+	name: ``,
 }
 
 export default ExperienceList
