@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/index.js"],"names":["Resume"],"mappings":"2FAAA,uBAEeA,YAAf","file":"component---src-pages-index-js-b1134486d82426a9386b.js","sourcesContent":["import Resume from './resume'\n\nexport default Resume\n"],"sourceRoot":""}
