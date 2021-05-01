@@ -56,7 +56,7 @@ const IndexPage = () => (
             mainTitle="Developer — Depict.ai"
             from="Feb 2021"
             to="Mar 2021"
-            link="https://curbfood.com"
+            link="https://depict.ai"
             tags={["Javascript", "Python", "Docker"]}
           >
             <p>
