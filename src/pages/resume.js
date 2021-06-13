@@ -54,8 +54,7 @@ const IndexPage = () => (
         <ExperienceList name="Experience">
           <Experience
             mainTitle="Developer — Depict.ai"
-            from="Feb 2021"
-            to="Mar 2021"
+            from="Mar 2021"
             link="https://depict.ai"
             tags={["Javascript", "Python", "Docker"]}
           >
@@ -76,7 +75,8 @@ const IndexPage = () => (
           >
             <p>
               Was part of the initial tech team at Curb Food, a food delivery
-              app.
+              app. Did much of the work setting up the backend using Firebase
+              and developed the food delivery app.
             </p>
           </Experience>
           <Experience
@@ -87,7 +87,7 @@ const IndexPage = () => (
             tags={["React", "UX", "GCP", "Node.js"]}
           >
             <p>
-              Worked together with a team with desginers and backend devs to
+              Worked together with a team of desginers and backend devs to
               create some customer facing products.
             </p>
           </Experience>
@@ -105,7 +105,7 @@ const IndexPage = () => (
                   className="text-blue-600"
                   href="https://app.redditvideomaker.com/"
                 >
-                  developed a tool
+                  developed a service
                 </a>{" "}
                 to cut down the editing time and allow creating videos from
                 anywhere
@@ -186,6 +186,7 @@ const IndexPage = () => (
             mainTitle="Co-founder, Full-stack developer — Tentium AB"
             link="https://tentium.se"
             from="2018"
+            to="2021"
             tags={["Web Development", "Graphic Design"]}
           >
             <p>
@@ -220,6 +221,7 @@ const IndexPage = () => (
             mainTitle="Computer Science, Royal Institute of Technology"
             subTitle="Stockholm, Sweden"
             from="2018"
+            to="2020"
           />
           <Experience
             mainTitle="Technology Programme, ABB Industrigymnasium"
