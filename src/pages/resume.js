@@ -52,10 +52,16 @@ const IndexPage = () => (
     <div className="flex flex-wrap">
       <div className="flex-1 px-4 basis-25">
         <ExperienceList name="Experience">
-          <Experience mainTitle="Software Consultant" from="Sep 2021" tags={[]}>
+          <Experience
+            mainTitle="Software Consultant — Tentium AB"
+            from="Sep 2021"
+            tags={[]}
+          >
             <p>
-              Since September 2021 I am doing full-stack development on a
-              freelance basis.
+              Right now I am focusing full-time on full-stack consulting. I've
+              worked with developing web-based video rendering tools, CRM's and
+              designing websites, among other things. My stack of choice is
+              Node.js + React, but it depends on the project.
             </p>
           </Experience>
           <Experience
@@ -76,18 +82,6 @@ const IndexPage = () => (
               I took responsability for designing, developing and launching
               their email recommendation service, now running in production with
               several customers.
-            </p>
-          </Experience>
-          <Experience
-            mainTitle="Developer — Curb Food"
-            from="Feb 2021"
-            to="Mar 2021"
-            link="https://curbfood.com"
-            tags={["React Native", "Firebase", "GraphQL", "Node.js"]}
-          >
-            <p>
-              Was part of the initial tech team at Curb Food, a food delivery
-              app. Set up the backend and developed the food delivery app.
             </p>
           </Experience>
           <Experience
