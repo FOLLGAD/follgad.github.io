@@ -156,68 +156,36 @@ const IndexPage = () => (
             </Sublist>
           </Experience>
           <Experience
-            mainTitle="Full-stack developer — Sjukvårdskonsulterna"
-            link="https://sjukvardskonsulterna.se"
-            from="Dec 2016"
-            to="2018"
-            tags={[
-              "React Native",
-              "jQuery",
-              "MongoDB",
-              "Keystone.js",
-              "Node.js",
-            ]}
-          >
-            <p>
-              Sjukvårdskonsulterna is a consulting firm in the healthcare
-              sector.
-            </p>
-            <Sublist>
-              <SublistItem>
-                Developed their entire web system from scratch
-              </SublistItem>
-              <SublistItem>
-                Used routinely for many tasks of both management and the
-                consultants, including time-tracking, and publishing and finding
-                assignments
-              </SublistItem>
-              <SublistItem>In production since 2017</SublistItem>
-              <SublistItem>
-                We built an accompanying app in React Native
-              </SublistItem>
-            </Sublist>
-          </Experience>
-          <Experience
             mainTitle="Co-founder, Full-stack developer — Tentium AB"
             link="https://tentium.se"
-            from="2018"
+            from="2017"
             to="2021"
             tags={["Web Development", "Graphic Design"]}
           >
             <p>
               At Tentium, we build software for clients. We're a team of two,
-              focusing mainly on building full-stack development solutions.
+              focusing mainly on building full-stack development solutions. Here
+              are some of the things I designed, built and brought to
+              production:
+              <ul>
+                <li>
+                  <a
+                    className="text-blue-600"
+                    href="https://sjukvardskonsulterna.se/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Sjukvårdskonsulterna
+                  </a>
+                  , a consulting firm in the healthcare sector for whom we built
+                  their entire web system, which is still in production since
+                  release back in 2017.
+                </li>
+                <li>Web-based video rendering programs</li>
+                <li>A hotel booking system</li>
+              </ul>
             </p>
           </Experience>
-          {/* <Experience */}
-          {/*   mainTitle="Inventory Management Tool for ABB" */}
-          {/*   from="Spring 2017" */}
-          {/*   to="Spring 2017" */}
-          {/*   tags={["React Native", "Vue.js"]} */}
-          {/* > */}
-          {/*   <p> */}
-          {/*     This app was developed as a project for high-school. The app */}
-          {/*     connected to a Node API and a database, to allow quick lookup of */}
-          {/*     inventory items, in order to facilitate inventory management at */}
-          {/*     ABB. */}
-          {/*   </p> */}
-          {/*   <Sublist> */}
-          {/*     <SublistItem>The app was written with React Native</SublistItem> */}
-          {/*     <SublistItem> */}
-          {/*       Presented a working prototype for the president of ABB Sweden */}
-          {/*     </SublistItem> */}
-          {/*   </Sublist> */}
-          {/* </Experience> */}
         </ExperienceList>
       </div>
       <div className="flex-1 px-2">
