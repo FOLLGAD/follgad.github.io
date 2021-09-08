@@ -42,9 +42,9 @@ const IndexPage = () => (
 
         <p>
           I'm a developer with an entrepreneurial spirit. I've been doing
-          professional web development since 4 years back. I love
-          problem-solving and am constantly looking to learn things and find new
-          problems to solve.
+          professional web development since high school. I love problem-solving
+          and am constantly looking for new challenges and for opportunities to
+          learn.
         </p>
       </div>
     </div>
@@ -52,11 +52,18 @@ const IndexPage = () => (
     <div className="flex flex-wrap">
       <div className="flex-1 px-4 basis-25">
         <ExperienceList name="Experience">
+          <Experience mainTitle="Software Consultant" from="Sep 2021" tags={[]}>
+            <p>
+              Since September 2021 I am doing full-stack development on a
+              freelance basis.
+            </p>
+          </Experience>
           <Experience
             mainTitle="Developer — Depict.ai"
             from="Mar 2021"
+            to="Sep 2021"
             link="https://depict.ai"
-            tags={["Javascript", "Python", "Docker"]}
+            tags={["Javascript", "GCP", "Node.js", "Python", "Docker"]}
           >
             <p>
               Depict.ai's mission is using cutting-edge AI to bring
@@ -64,6 +71,11 @@ const IndexPage = () => (
               the Python backend and on the frontend, working with very
               well-known e-commerce stores to seamlessly inject our
               recommendations on their websites.
+            </p>
+            <p>
+              I took responsability for designing, developing and launching
+              their email recommendation service, now running in production with
+              several customers.
             </p>
           </Experience>
           <Experience
@@ -75,8 +87,7 @@ const IndexPage = () => (
           >
             <p>
               Was part of the initial tech team at Curb Food, a food delivery
-              app. Did much of the work setting up the backend using Firebase
-              and developed the food delivery app.
+              app. Set up the backend and developed the food delivery app.
             </p>
           </Experience>
           <Experience
@@ -87,15 +98,15 @@ const IndexPage = () => (
             tags={["React", "UX", "GCP", "Node.js"]}
           >
             <p>
-              Worked together with a team of desginers and backend devs to
-              create some customer facing products.
+              Worked together with a team with desginers and backend devs to
+              create a customer-facing dashboards and other products.
             </p>
           </Experience>
           <Experience
             mainTitle="Lead Developer — Redditors"
             link="https://www.youtube.com/channel/UCmu_67Qpj7xBn7WxUoRi8FQ"
             from="Apr 2019"
-            tags={["React", "Redux", "Node.js", "ffmpeg"]}
+            tags={["React", "Redux", "Node.js", "ffmpeg", "AWS"]}
           >
             <p>Redditors is a Youtube channel I co-founded.</p>
             <Sublist>
