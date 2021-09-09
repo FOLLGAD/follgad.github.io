@@ -13,6 +13,7 @@ const linkIcon = (
 const Experience = ({
   mainTitle = "",
   subTitle = "",
+  location,
   from,
   to,
   link,
@@ -29,16 +30,18 @@ const Experience = ({
 
   return (
     <div className="pt-3">
-      <div className="text-lg font-bold text-gray-700">
+      <div className="text-md font-bold text-gray-700">
         {link ? (
           <a href={link} target="_blank" rel="noopener noreferrer">
             {mainTitle} {linkIcon}
           </a>
         ) : (
-            mainTitle
-          )}
+          mainTitle
+        )}
       </div>
       <div className="text-gray-500 tracking-tight">
+        {location}
+        {location && timeTitle && " · "}
         {timeTitle}
         {subTitle && timeTitle && " | "}
         {subTitle}
@@ -64,6 +67,7 @@ Experience.propTypes = {
   mainTitle: PropTypes.string,
   subTitle: PropTypes.string,
   timeTitle: PropTypes.string,
+  location: PropTypes.string,
   link: PropTypes.string,
   from: PropTypes.string,
   to: PropTypes.string,

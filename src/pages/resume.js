@@ -56,6 +56,7 @@ const IndexPage = () => (
             mainTitle="Software Consultant — Tentium AB"
             from="Sep 2021"
             tags={[]}
+            location="Anywhere"
           >
             <p>
               Right now I am focusing full-time on full-stack consulting. I've
@@ -70,6 +71,7 @@ const IndexPage = () => (
             to="Sep 2021"
             link="https://depict.ai"
             tags={["Javascript", "GCP", "Node.js", "Python", "Docker"]}
+            location="Stockholm"
           >
             <p>
               Depict.ai's mission is using cutting-edge AI to bring
@@ -90,6 +92,7 @@ const IndexPage = () => (
             to="Feb 2021"
             link="https://video.io"
             tags={["React", "UX", "GCP", "Node.js"]}
+            location="San Fransisco"
           >
             <p>
               Worked together with a team with desginers and backend devs to
@@ -132,6 +135,7 @@ const IndexPage = () => (
             to="2020"
             link="https://tenfast.se"
             tags={["MongoDB", "Node.js", "Nuxt.js", "Vue", "Stripe"]}
+            location="Stockholm"
           >
             <p>
               A modern real-estate management system we started building in
