@@ -167,8 +167,8 @@ const IndexPage = () => (
               focusing mainly on building full-stack development solutions. Here
               are some of the things I designed, built and brought to
               production:
-              <ul>
-                <li>
+              <Sublist>
+                <SublistItem>
                   <a
                     className="text-blue-600"
                     href="https://sjukvardskonsulterna.se/"
@@ -180,10 +180,10 @@ const IndexPage = () => (
                   , a consulting firm in the healthcare sector for whom we built
                   their entire web system, which is still in production since
                   release back in 2017.
-                </li>
-                <li>Web-based video rendering programs</li>
-                <li>A hotel booking system</li>
-              </ul>
+                </SublistItem>
+                <SublistItem>Web-based video rendering programs</SublistItem>
+                <SublistItem>A hotel booking system</SublistItem>
+              </Sublist>
             </p>
           </Experience>
         </ExperienceList>
