@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && rm -rf docs && next export && mv ./out ./docs/",
+    "build": "next build && rm -rf docs && next export && mv ./out ./docs/ && echo nojekyll > ./docs/.nojekyll",
     "start": "next start",
     "lint": "next lint"
   },
