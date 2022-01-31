@@ -18,6 +18,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           gtag('config', 'G-QF6T58D0LR');
         `}
                 </Script>
+                <Script defer data-domain="follgad.github.com" src="https://plausible.io/js/plausible.js" />
+
 
                 <Component {...pageProps} /></>
 }
