@@ -49,7 +49,7 @@ const IndexPage = () => (
       <div className="flex-1 px-4 basis-25">
         <ExperienceList name="Experience">
           <Experience
-            mainTitle="Software Consultant — Tentium AB"
+            mainTitle="Software Consultant — Neostack AB"
             from="Sep 2021"
             tags={[]}
             location="Anywhere"
