@@ -96,36 +96,6 @@ const IndexPage = () => (
             </p>
           </Experience>
           <Experience
-            mainTitle="Lead Developer — Redditors"
-            link="https://www.youtube.com/channel/UCmu_67Qpj7xBn7WxUoRi8FQ"
-            from="Apr 2019"
-            tags={["React", "Redux", "Node.js", "ffmpeg", "AWS"]}
-          >
-            <p>Redditors is a Youtube channel I co-founded.</p>
-            <Sublist>
-              <SublistItem>
-                I{" "}
-                <a
-                  className="text-blue-600"
-                  href="https://app.redditvideomaker.com/"
-                >
-                  developed a service
-                </a>{" "}
-                to cut down the editing time and allow creating videos from
-                anywhere
-              </SublistItem>
-              <SublistItem>
-                Cut down the time requried to below 15 min per video (decreased
-                by over 80%) while simultaneously improving the viewer
-                experience
-              </SublistItem>
-              <SublistItem>
-                This has enabled us to go from 0 subscribers and views to 100k
-                subscribers and 40 million views in just a year.
-              </SublistItem>
-            </Sublist>
-          </Experience>
-          <Experience
             mainTitle="Co-founder, Full-stack developer — TenFAST"
             from="2018"
             to="2020"
@@ -165,7 +135,7 @@ const IndexPage = () => (
             <p>
               At Tentium, we build software for clients. We're a team of two,
               focusing mainly on building full-stack development solutions. Here
-              are some of the things I designed, built and brought to
+              are some of the things we designed, built and brought to
               production:
               <Sublist>
                 <SublistItem>
@@ -203,8 +173,38 @@ const IndexPage = () => (
             to="2018"
           />
         </ExperienceList>
-        <ExperienceList name="For fun">
+        <ExperienceList name="Projects">
           {/* <p className="mt-2 text-gray-900">I've done many projects just for fun:</p> */}
+          <Experience
+            mainTitle="Lead Developer — Redditors"
+            link="https://www.youtube.com/channel/UCmu_67Qpj7xBn7WxUoRi8FQ"
+            from="Apr 2019"
+            tags={["React", "Redux", "Node.js", "ffmpeg", "AWS"]}
+          >
+            <p>Redditors is a Youtube channel I co-founded.</p>
+            <Sublist>
+              <SublistItem>
+                I{" "}
+                <a
+                  className="text-blue-600"
+                  href="https://app.redditvideomaker.com/"
+                >
+                  developed a service
+                </a>{" "}
+                to cut down the editing time and allow creating videos from
+                anywhere
+              </SublistItem>
+              <SublistItem>
+                Cut down the time requried to below 15 min per video (decreased
+                by over 80%) while simultaneously improving the viewer
+                experience
+              </SublistItem>
+              <SublistItem>
+                This has enabled us to go from 0 subscribers and views to 100k
+                subscribers and 40 million views in just a year.
+              </SublistItem>
+            </Sublist>
+          </Experience>
           <Experience
             mainTitle="Bemi is You"
             link="https://github.com/FOLLGAD/bemi-is-you"
