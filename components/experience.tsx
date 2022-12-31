@@ -23,8 +23,8 @@ const Experience: React.FC<{mainTitle?:string, subTitle?: string, location?: str
     ? to
       ? from === to
         ? from
-        : `${from} - ${to}`
-      : `${from} - Present`
+        : `${from} – ${to}`
+      : `${from} – Present`
     : null
 
   return (

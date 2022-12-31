@@ -9,14 +9,11 @@ const IndexPage = () => (
   <Layout>
     <div className="flex">
       <div className="flex-1 px-4">
-        <div className="text-5xl text-gray-700 mb-6 mt-3 inline-block">
+        <div className="text-4xl font-medium text-gray-700 mb-6 mt-3 inline-block">
           Emil Ahlbäck
         </div>
 
         <div className="mb-3 float-right text-right">
-          <Info right>
-            <a href="https://follgad.github.io">https://follgad.github.io</a>
-          </Info>
           <Info icon="cil-location-pin" right>
             Stockholm, Sweden
           </Info>
@@ -24,7 +21,7 @@ const IndexPage = () => (
             +46 70 491 17 76
           </Info>
           <Info icon="cil-envelope-closed" right>
-            <a href="mailto:ahlback.emil@gmail.com">ahlback.emil@gmail.com</a>
+            <a href="mailto:ahlback.emil@gmail.com">emil@neostack.io</a>
           </Info>
           <Info icon="cib-github" right>
             <a href="https://github.com/follgad">github.com/follgad</a>
@@ -49,18 +46,27 @@ const IndexPage = () => (
       <div className="flex-1 px-4 basis-25">
         <ExperienceList name="Experience">
           <Experience
+            mainTitle="Software Engineer — Dework"
+            from="Mar 2022"
+            tags={["Web3", "Nest.js", "Next.js", "GCP"]}
+            location="Anywhere"
+          >
+            <p>
+              Dework is a decentralized work platform that aims to revolutionize
+              how work is done. As a full-stack engineer I've been working with the founding engineer to build
+              the platform from the ground up.
+            </p>
+          </Experience>
+          {/* <Experience
             mainTitle="Software Consultant — Neostack AB"
-            from="Sep 2021"
+            from="2021"
             tags={[]}
             location="Anywhere"
           >
             <p>
-              Right now I am focusing full-time on full-stack consulting. I've
-              worked with developing web-based video rendering tools, CRM's and
-              designing websites, among other things. My stack of choice is
-              Node.js + React, but it depends on the project.
+              Full-stack consulting for various projects and clients.
             </p>
-          </Experience>
+          </Experience> */}
           <Experience
             mainTitle="Developer — Depict.ai"
             from="Mar 2021"
@@ -92,7 +98,8 @@ const IndexPage = () => (
           >
             <p>
               Worked together with a team with desginers and backend devs to
-              create a customer-facing dashboards and other products.
+              create a customer-facing dashboards and other products. Among others a summarization tool using BERT
+              to summarize videos and present the transcript in a user-friendly way.
             </p>
           </Experience>
           <Experience
@@ -176,12 +183,12 @@ const IndexPage = () => (
         <ExperienceList name="Projects">
           {/* <p className="mt-2 text-gray-900">I've done many projects just for fun:</p> */}
           <Experience
-            mainTitle="Lead Developer — Redditors"
+            mainTitle="Redditors Studios"
             link="https://www.youtube.com/channel/UCmu_67Qpj7xBn7WxUoRi8FQ"
             from="Apr 2019"
             tags={["React", "Redux", "Node.js", "ffmpeg", "AWS"]}
           >
-            <p>Redditors is a Youtube channel I co-founded.</p>
+            <p>Redditors is a Youtube channel I started and ran.</p>
             <Sublist>
               <SublistItem>
                 I{" "}
@@ -200,7 +207,7 @@ const IndexPage = () => (
                 experience
               </SublistItem>
               <SublistItem>
-                This has enabled us to go from 0 subscribers and views to 100k
+                This enabled us to go from 0 subscribers and views to 100k
                 subscribers and 40 million views in just a year.
               </SublistItem>
             </Sublist>
@@ -244,7 +251,7 @@ const IndexPage = () => (
         <ExperienceList name="Languages">
           <Experience mainTitle="Swedish" subTitle="Native Fluency" />
           <Experience mainTitle="English" subTitle="Full Fluency" />
-          <Experience mainTitle="Spanish" subTitle="Intermediate" />
+          <Experience mainTitle="Spanish" subTitle="Intermediate (learning)" />
         </ExperienceList>
       </div>
     </div>
