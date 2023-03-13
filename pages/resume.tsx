@@ -202,7 +202,7 @@ const IndexPage = () => (
                 anywhere
               </SublistItem>
               <SublistItem>
-                Cut down the time requried to below 15 min per video (decreased
+                Cut down the time required to below 15 min per video (decreased
                 by over 80%) while simultaneously improving the viewer
                 experience
               </SublistItem>
