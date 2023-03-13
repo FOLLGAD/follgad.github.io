@@ -43,13 +43,27 @@ const IndexPage = () => (
     </div>
 
     <div className="flex flex-wrap">
-      <div className="flex-1 px-4 basis-25">
+      <div className="flex-1 px-4" style={{ flexBasis: "30%;" }}>
         <ExperienceList name="Experience">
+          <Experience
+            mainTitle="Software Consultant — Self employed"
+            from="Oct 2021"
+            location="Neostack AB"
+            tags={["AI", "Web3", "Frontend"]}
+          >
+            <p>
+              Worked for a variety of clients, from startups to large
+              corporations. Among others I worked as Senior Frontend Engineer at
+              New York fintech startup <a className="text-blue-600" href="https://array.com">Array</a>, and a few projects
+              leveraging GPT-3 and Stable Diffusion.
+            </p>
+          </Experience>
           <Experience
             mainTitle="Software Engineer — Dework"
             from="Mar 2022"
-            tags={["Web3", "Nest.js", "Next.js", "GCP"]}
-            location="Anywhere"
+            to="Dec 2022"
+            tags={["Web3", "Nest.js", "Next.js", "GCP", "Typscript"]}
+            location="Remote"
           >
             <p>
               Dework is a decentralized work platform that aims to revolutionize
@@ -57,36 +71,30 @@ const IndexPage = () => (
               the platform from the ground up.
             </p>
           </Experience>
-          {/* <Experience
-            mainTitle="Software Consultant — Neostack AB"
-            from="2021"
-            tags={[]}
-            location="Anywhere"
-          >
-            <p>
-              Full-stack consulting for various projects and clients.
-            </p>
-          </Experience> */}
           <Experience
-            mainTitle="Developer — Depict.ai"
+            mainTitle="Developer — Depict"
             from="Mar 2021"
             to="Sep 2021"
             link="https://depict.ai"
-            tags={["Javascript", "GCP", "Node.js", "Python", "Docker"]}
+            tags={["Typescript", "GCP", "Node.js", "Python", "Docker"]}
             location="Stockholm"
           >
-            <p>
-              Depict.ai's mission is using cutting-edge AI to bring
-              Amazon-quality product recommendations to everyone. Worked on both
-              the Python backend and on the frontend, working with very
-              well-known e-commerce stores to seamlessly inject our
-              recommendations on their websites.
-            </p>
-            <p>
-              I took responsability for designing, developing and launching
-              their email recommendation service, now running in production with
-              several customers.
-            </p>
+            <p>I was one of two members of the frontend team at Depict.</p>
+            <Sublist>
+              <SublistItem>
+                Daily pushed code that reached millions of users through e-commerce websites in Sweden and worldwide
+              </SublistItem>
+              <SublistItem>
+                Designed and developed their email recommendation system from scratch
+              </SublistItem>
+              <SublistItem>
+                Led the development of the dashboard for their customers. Written in React and Next.js
+              </SublistItem>
+              <SublistItem>
+                Improved DX by automating the deployment process, helping transition the entire codebase to Typescript,
+                and creating a library allowing compile-time JSX to allow writing fast and efficient React-style code
+              </SublistItem>
+            </Sublist>
           </Experience>
           <Experience
             mainTitle="Web Developer — Video.io"
@@ -112,19 +120,17 @@ const IndexPage = () => (
           >
             <p>
               A modern real-estate management system we started building in
-              2018, with paying customers varying from small business owners to
-              Swedish municipalities.
+              2018.
             </p>
             <Sublist>
               <SublistItem>
-                The front-end is written with Nuxt.js, with a Node.js Express
-                API in the backend.
+                Customers ranging from small business owners to <a className="text-blue-600" href="https://morakommun.se/">Swedish municipalities</a>.
               </SublistItem>
               <SublistItem>
-                TenFAST is a member of the{" "}
+                TenFAST joined the{" "}
                 <a
                   className="text-blue-600"
-                  href="https://www.kth.se/en/innovation"
+                  href="https://www.kth.se/om/innovation/om/nyheter/digital-kick-off-for-17-nya-kth-startups-1.967571"
                 >
                   KTH Innovation
                 </a>{" "}
@@ -140,23 +146,12 @@ const IndexPage = () => (
             tags={["Web Development", "Graphic Design"]}
           >
             <p>
-              At Tentium, we build software for clients. We're a team of two,
-              focusing mainly on building full-stack development solutions. Here
-              are some of the things we designed, built and brought to
-              production:
+              My first company, started in 2017. I built a variety of web
+              applications for clients:
               <Sublist>
                 <SublistItem>
-                  <a
-                    className="text-blue-600"
-                    href="https://sjukvardskonsulterna.se/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Sjukvårdskonsulterna
-                  </a>
-                  , a consulting firm in the healthcare sector for whom we built
-                  their entire web system, which is still in production since
-                  release back in 2017.
+                  Sjukvårdskonsulterna, a consulting firm in the healthcare sector for whom we built
+                  their entire web system.
                 </SublistItem>
                 <SublistItem>Web-based video rendering programs</SublistItem>
                 <SublistItem>A hotel booking system</SublistItem>
@@ -169,13 +164,13 @@ const IndexPage = () => (
         <ExperienceList name="Education">
           <Experience
             mainTitle="Computer Science, Royal Institute of Technology"
-            subTitle="Stockholm, Sweden"
+            location="Stockholm, Sweden"
             from="2018"
-            to="2020"
+            to="2023"
           />
           <Experience
             mainTitle="Technology Programme, ABB Industrigymnasium"
-            subTitle="Västerås, Sweden"
+            location="Västerås, Sweden"
             from="2015"
             to="2018"
           />
@@ -185,7 +180,7 @@ const IndexPage = () => (
           <Experience
             mainTitle="Redditors Studios"
             link="https://www.youtube.com/channel/UCmu_67Qpj7xBn7WxUoRi8FQ"
-            from="Apr 2019"
+            subTitle="Apr 2019"
             tags={["React", "Redux", "Node.js", "ffmpeg", "AWS"]}
           >
             <p>Redditors is a Youtube channel I started and ran.</p>
@@ -194,12 +189,11 @@ const IndexPage = () => (
                 I{" "}
                 <a
                   className="text-blue-600"
-                  href="https://app.redditvideomaker.com/"
+                  href="https://github.com/FOLLGAD/reddit-video-maker"
                 >
                   developed a service
                 </a>{" "}
-                to cut down the editing time and allow creating videos from
-                anywhere
+                to automate video editing
               </SublistItem>
               <SublistItem>
                 Cut down the time required to below 15 min per video (decreased
@@ -208,7 +202,7 @@ const IndexPage = () => (
               </SublistItem>
               <SublistItem>
                 This enabled us to go from 0 subscribers and views to 100k
-                subscribers and 40 million views in just a year.
+                subscribers and 40 million views in under a year.
               </SublistItem>
             </Sublist>
           </Experience>
