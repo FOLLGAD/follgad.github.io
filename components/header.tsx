@@ -1,6 +1,10 @@
 import Link from "next/link";
 
-const Header = ({ siteTitle }) => (
+interface HeaderProps {
+  siteTitle: string;
+}
+
+const Header = ({ siteTitle }: HeaderProps) => (
   <header className="print:hidden bg-blue-700 mb-4">
     <div className="flex container mx-auto justify-between">
       <div className="p-4">
@@ -15,6 +19,13 @@ const Header = ({ siteTitle }) => (
         </Link> */}
         <span className="mx-2 px-2 py-1 text-decoration-none text-gray-200">
           <Link href="/resume">Resume</Link>
+        </span>
+        <span className="mx-2 px-2 py-1 text-decoration-none text-gray-200">
+          <Link href="https://linkedin.com/in/emil-ahlback">
+            <a target="_blank" rel="noopener noreferrer">
+              About Me
+            </a>
+          </Link>
         </span>
       </div>
     </div>
