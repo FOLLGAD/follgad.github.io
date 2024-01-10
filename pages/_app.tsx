@@ -14,11 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Script id="google-analytics" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];function gtag(){window.dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-QF6T58D0LR');`}
       </Script>
-      <Script
-        defer
-        data-domain="follgad.github.com"
-        src="https://plausible.io/js/plausible.js"
-      />
+      <Script defer data-domain="emil.zip" src="https://plausible.io/js/script.js" />
       <Head>
         <title>Emil Ahlbäck</title>
         <link rel="canonical" href="https://emil.zip" />
