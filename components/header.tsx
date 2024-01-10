@@ -23,7 +23,7 @@ const Header = ({ siteTitle }: HeaderProps) => (
         <span className="mx-2 px-2 py-1 text-decoration-none text-gray-200">
           <Link href="https://linkedin.com/in/emil-ahlback">
             <a target="_blank" rel="noopener noreferrer">
-              About Me
+              About me
             </a>
           </Link>
         </span>
