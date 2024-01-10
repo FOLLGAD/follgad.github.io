@@ -51,7 +51,7 @@ const Experience: React.FC<{mainTitle?:string, subTitle?: string, location?: str
           {tags.map(tag => (
             <div
               key={tag}
-              className="text-xs text-gray-700 mr-2 my-2 py-2 px-3 bg-gray-100 rounded-full"
+              className="text-xs text-gray-700 mr-2 my-2 py-1 px-2 bg-gray-100 rounded-full shadow-md hover:bg-gray-200 transition-colors duration-200 ease-in-out cursor-pointer"
             >
               {tag}
             </div>
