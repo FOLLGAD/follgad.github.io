@@ -1,8 +1,8 @@
 import Header from "./header"
 import "./layout.module.css"
 
-const Layout = ({ children }) => {
-  // let year = (new Date()).getFullYear()
+const Layout = ({ children }: { children: React.ReactNode }) => {
+  const year = (new Date()).getFullYear()
 
   return (
     <>

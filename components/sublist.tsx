@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const Sublist = ({ children }) => (
+const Sublist: FC = ({ children }) => (
     <ul style={{ listStyle: "disc", marginLeft: "1em", paddingLeft: "0.5em" }}>
         {children}
     </ul>

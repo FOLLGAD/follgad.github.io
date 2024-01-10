@@ -46,7 +46,7 @@ const IndexPage = () => (
     </div>
 
     <div className="flex flex-wrap">
-      <div className="flex-1 px-4" style={{ flexBasis: "30%;" }}>
+      <div className="flex-1 px-4" style={{ flexBasis: "30%" }}>
         <ExperienceList name="Experience">
           <Experience
             mainTitle="Software Consultant — Self employed"
