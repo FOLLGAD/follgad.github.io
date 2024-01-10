@@ -1,9 +1,9 @@
-import Experience from "../components/experience"
-import ExperienceList from "../components/experience-list"
-import Layout from "../components/layout"
-import Info from "../components/info"
-import Sublist from "../components/sublist"
-import SublistItem from "../components/sublist-item"
+import Experience from "../components/experience";
+import ExperienceList from "../components/experience-list";
+import Layout from "../components/layout";
+import Info from "../components/info";
+import Sublist from "../components/sublist";
+import SublistItem from "../components/sublist-item";
 
 const IndexPage = () => (
   <Layout>
@@ -31,6 +31,9 @@ const IndexPage = () => (
               linkedin.com/in/emil-ahlback
             </a>
           </Info>
+          <Info icon="x" right>
+            <a href="https://twitter.com/emilahlback">@emilahlback</a>
+          </Info>
         </div>
 
         <p>
@@ -49,14 +52,32 @@ const IndexPage = () => (
             mainTitle="Software Consultant — Self employed"
             from="Oct 2021"
             location="Neostack AB"
-            tags={["AI", "Web3", "Frontend"]}
+            tags={[
+              "Fine-tuning",
+              "Llama",
+              "Retrieval-Augmented Generation",
+              "Embeddings",
+              "GPT-4",
+            ]}
           >
             <p>
               Worked for a variety of clients, from startups to large
-              corporations. Among others I worked as Senior Frontend Engineer at
-              New York fintech startup <a className="text-blue-600" href="https://array.com">Array</a>, and a few projects
-              leveraging GPT-3 and Stable Diffusion.
+              corporations.
             </p>
+            <p>Clients include:</p>
+            <ul className="list-disc pl-4">
+              <li>
+                a New York fintech startup{" "}
+                <a className="text-blue-600" href="https://array.com">
+                  Array
+                </a>{" "}
+                (Senior Software Engineer)
+              </li>
+              <li>
+                Signet Jewelers, the world's largest online jewelry retailer (AI
+                Engineer)
+              </li>
+            </ul>
           </Experience>
           <Experience
             mainTitle="Software Engineer — Dework"
@@ -67,8 +88,8 @@ const IndexPage = () => (
           >
             <p>
               Dework is a decentralized work platform that aims to revolutionize
-              how work is done. As a full-stack engineer I've been working with the founding engineer to build
-              the platform from the ground up.
+              how work is done. As a full-stack engineer I've been working with
+              the founding engineer to build the platform from the ground up.
             </p>
           </Experience>
           <Experience
@@ -82,17 +103,22 @@ const IndexPage = () => (
             <p>I was one of two members of the frontend team at Depict.</p>
             <Sublist>
               <SublistItem>
-                Daily pushed code that reached millions of users through e-commerce websites in Sweden and worldwide
+                Daily pushed code that reached millions of users through
+                e-commerce websites in Sweden and worldwide
               </SublistItem>
               <SublistItem>
-                Designed and developed their email recommendation system from scratch
+                Designed and developed their email recommendation system from
+                scratch
               </SublistItem>
               <SublistItem>
-                Led the development of the dashboard for their customers. Written in React and Next.js
+                Led the development of the dashboard for their customers.
+                Written in React and Next.js
               </SublistItem>
               <SublistItem>
-                Improved DX by automating the deployment process, helping transition the entire codebase to Typescript,
-                and creating a library allowing compile-time JSX to allow writing fast and efficient React-style code
+                Improved DX by automating the deployment process, helping
+                transition the entire codebase to Typescript, and creating a
+                library allowing compile-time JSX to allow writing fast and
+                efficient React-style code
               </SublistItem>
             </Sublist>
           </Experience>
@@ -106,8 +132,9 @@ const IndexPage = () => (
           >
             <p>
               Worked together with a team with desginers and backend devs to
-              create a customer-facing dashboards and other products. Among others a summarization tool using BERT
-              to summarize videos and present the transcript in a user-friendly way.
+              create a customer-facing dashboards and other products. Among
+              others a summarization tool using BERT to summarize videos and
+              present the transcript in a user-friendly way.
             </p>
           </Experience>
           <Experience
@@ -124,7 +151,11 @@ const IndexPage = () => (
             </p>
             <Sublist>
               <SublistItem>
-                Customers ranging from small business owners to <a className="text-blue-600" href="https://morakommun.se/">Swedish municipalities</a>.
+                Customers ranging from small business owners to{" "}
+                <a className="text-blue-600" href="https://morakommun.se/">
+                  Swedish municipalities
+                </a>
+                .
               </SublistItem>
               <SublistItem>
                 TenFAST joined the{" "}
@@ -150,8 +181,8 @@ const IndexPage = () => (
               applications for clients:
               <Sublist>
                 <SublistItem>
-                  Sjukvårdskonsulterna, a consulting firm in the healthcare sector for whom we built
-                  their entire web system.
+                  Sjukvårdskonsulterna, a consulting firm in the healthcare
+                  sector for whom we built their entire web system.
                 </SublistItem>
                 <SublistItem>Web-based video rendering programs</SublistItem>
                 <SublistItem>A hotel booking system</SublistItem>
@@ -162,6 +193,12 @@ const IndexPage = () => (
       </div>
       <div className="flex-1 px-2">
         <ExperienceList name="Education">
+          <Experience
+            mainTitle="Artificial Intelligence, Nanyang Technological University"
+            location="Singapore"
+            from="2023"
+            to="2023"
+          />
           <Experience
             mainTitle="Computer Science, Royal Institute of Technology"
             location="Stockholm, Sweden"
@@ -177,6 +214,22 @@ const IndexPage = () => (
         </ExperienceList>
         <ExperienceList name="Projects">
           {/* <p className="mt-2 text-gray-900">I've done many projects just for fun:</p> */}
+          <Experience
+            mainTitle="Godmode ⚡️"
+            link="https://godmode.space"
+            tags={["OpenAI", "GPT-4", "React", "Python"]}
+          >
+            <p>
+              I developed the first web-based platform for AI Agents. We reached
+              1M users over the first three months{" "}
+              <span className="text-blue-600">
+                <a href="https://twitter.com/_Lonis_/status/1646641412182536196" target="_blank" rel="noopener noreferrer">
+                  [twitter]
+                </a>
+              </span>
+              .
+            </p>
+          </Experience>
           <Experience
             mainTitle="Redditors Studios"
             link="https://www.youtube.com/channel/UCmu_67Qpj7xBn7WxUoRi8FQ"
@@ -206,29 +259,6 @@ const IndexPage = () => (
               </SublistItem>
             </Sublist>
           </Experience>
-          <Experience
-            mainTitle="Bemi is You"
-            link="https://github.com/FOLLGAD/bemi-is-you"
-            tags={["Go", "WebSockets", "pixi.js"]}
-          >
-            <p>
-              An online multiplayer puzzle game, where the game rules are
-              dynamically modified by rearranging blocks of text. The backend
-              was fully written in Go, using WebSockets for communication with
-              the clients.
-            </p>
-          </Experience>
-          {/* <Experience
-						mainTitle="Bemilanche"
-						from="2017"
-						to="2017"
-						link="https://github.com/FOLLGAD/bemilanche"
-					>
-						<p>
-							A multiplayer arcade game based on jumping on falling blocks and avoiding death.
-							The game was written from scratch in vanilla javascript.
-						</p>
-					</Experience> */}
         </ExperienceList>
         <ExperienceList name="Skills">
           <Experience mainTitle="Javascript/Node.js">
@@ -250,6 +280,6 @@ const IndexPage = () => (
       </div>
     </div>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
