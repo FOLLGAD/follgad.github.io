@@ -223,7 +223,11 @@ const IndexPage = () => (
               I developed the first web-based platform for AI Agents. We reached
               1M users over the first three months{" "}
               <span className="text-blue-600">
-                <a href="https://twitter.com/_Lonis_/status/1646641412182536196" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://twitter.com/_Lonis_/status/1646641412182536196"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   [twitter]
                 </a>
               </span>
@@ -244,7 +248,7 @@ const IndexPage = () => (
                   className="text-blue-600"
                   href="https://github.com/FOLLGAD/reddit-video-maker"
                 >
-                  developed a service
+                  developed and open-sourced a service
                 </a>{" "}
                 to automate video editing
               </SublistItem>
