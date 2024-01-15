@@ -58,6 +58,7 @@ const IndexPage = () => (
               "Retrieval-Augmented Generation",
               "Embeddings",
               "GPT-4",
+              "AWS",
             ]}
           >
             <p>
@@ -83,13 +84,14 @@ const IndexPage = () => (
             mainTitle="Software Engineer — Dework"
             from="Mar 2022"
             to="Dec 2022"
-            tags={["Web3", "Nest.js", "Next.js", "GCP", "Typscript"]}
+            tags={["Nest.js", "Next.js", "React", "GCP", "Typscript"]}
             location="Remote"
           >
             <p>
               Dework is a decentralized work platform that aims to revolutionize
-              how work is done. As a full-stack engineer I've been working with
-              the founding engineer to build the platform from the ground up.
+              how work is done. As a full-stack engineer I've been working
+              together with the founding engineer to build the platform from the
+              ground up.
             </p>
           </Experience>
           <Experience
@@ -127,7 +129,7 @@ const IndexPage = () => (
             from="Aug 2020"
             to="Feb 2021"
             link="https://video.io"
-            tags={["React", "UX", "GCP", "Node.js"]}
+            tags={["React", "GCP", "Node.js"]}
             location="San Fransisco"
           >
             <p>
@@ -142,7 +144,7 @@ const IndexPage = () => (
             from="2018"
             to="2020"
             link="https://tenfast.se"
-            tags={["MongoDB", "Node.js", "Nuxt.js", "Vue", "Stripe"]}
+            tags={["MongoDB", "Node.js", "Vue", "Stripe"]}
             location="Stockholm"
           >
             <p>
@@ -177,12 +179,13 @@ const IndexPage = () => (
             tags={["Web Development", "Graphic Design"]}
           >
             <p>
-              My first company, started in 2017. I built a variety of web
-              applications for clients:
+              My first company, started in 2017. We built and maintained a
+              variety of web applications for clients:
               <Sublist>
                 <SublistItem>
                   Sjukvårdskonsulterna, a consulting firm in the healthcare
-                  sector for whom we built their entire web system.
+                  sector for whom we built their entire web system, handling
+                  millions of SEK in revenue.
                 </SublistItem>
                 <SublistItem>Web-based video rendering programs</SublistItem>
                 <SublistItem>A hotel booking system</SublistItem>
@@ -265,20 +268,20 @@ const IndexPage = () => (
           </Experience>
         </ExperienceList>
         <ExperienceList name="Skills">
-          <Experience mainTitle="Javascript/Node.js">
-            I have a long experience using the Javascript/Node.js ecosystem
+          <Experience mainTitle="Javascript">
+            I have many years of experience using the Javascript/Node.js
+            ecosystem
+          </Experience>
+          <Experience mainTitle="Python">
+            I have used Python for many years, both for web and ML.
           </Experience>
           <Experience mainTitle="React">
             My stack of choice is React and Node.js
           </Experience>
-          <Experience mainTitle="Linux">
-            I prefer the freedom of Linux over other OSes, and since 2018 I've
-            opted to use Linux exclusively
-          </Experience>
         </ExperienceList>
         <ExperienceList name="Languages">
-          <Experience mainTitle="Swedish" subTitle="Native Fluency" />
-          <Experience mainTitle="English" subTitle="Full Fluency" />
+          <Experience mainTitle="Swedish" subTitle="Native fluency" />
+          <Experience mainTitle="English" subTitle="Full fluency" />
           <Experience mainTitle="Spanish" subTitle="Intermediate (learning)" />
         </ExperienceList>
       </div>
