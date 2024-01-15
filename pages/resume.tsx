@@ -52,14 +52,7 @@ const IndexPage = () => (
             mainTitle="Software Consultant — Self employed"
             from="Oct 2021"
             location="Neostack AB"
-            tags={[
-              "Fine-tuning",
-              "Llama",
-              "Retrieval-Augmented Generation",
-              "Embeddings",
-              "GPT-4",
-              "AWS",
-            ]}
+            tags={["LLMs", "Fine-tuning", "RAG", "GPT-4", "AWS"]}
           >
             <p>
               Worked for a variety of clients, from startups to large
@@ -77,6 +70,9 @@ const IndexPage = () => (
               <li>
                 Signet Jewelers, the world's largest online jewelry retailer (AI
                 Engineer)
+              </li>
+              <li>
+                Godmode.space V2, a B2B platform for AI agents (AI Engineer)
               </li>
             </ul>
           </Experience>
