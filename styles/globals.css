@@ -36,3 +36,8 @@ a {
 		font-size: 12.288px !important;
 	}
 }
+
+
+@media print {
+	* { box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
+  }

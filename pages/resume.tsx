@@ -13,41 +13,70 @@ const IndexPage = () => (
           Emil Ahlbäck
         </div>
 
-        <div className="mb-3 float-right text-right">
-          <Info icon="cil-location-pin" right>
-            Stockholm, Sweden
-          </Info>
-          <Info icon="cil-phone" right>
-            +46 70 491 17 76
-          </Info>
-          <Info icon="cil-envelope-closed" right>
-            <a href="mailto:ahlback.emil@gmail.com">emil@neostack.io</a>
-          </Info>
-          <Info icon="cib-github" right>
-            <a href="https://github.com/follgad">github.com/follgad</a>
-          </Info>
-          <Info icon="cib-linkedin" right>
-            <a href="https://linkedin.com/in/emil-ahlback">
-              linkedin.com/in/emil-ahlback
-            </a>
-          </Info>
-          <Info icon="x" right>
-            <a href="https://twitter.com/emilahlback">@emilahlback</a>
-          </Info>
-        </div>
+        <div className="mb-3 ml-4 float-right rounded-lg p-4 pl-6 shadow-lg text-gray-700 bg-gray-100">
+          <h2 className="text-sm uppercase tracking-widest font-bold text-blue-500">
+            Contact me
+          </h2>
 
-        <p>
-          I'm a developer with an entrepreneurial spirit. I've been doing
-          professional web development since high school. I love problem-solving
-          and am constantly looking for new challenges and for opportunities to
-          learn.
-        </p>
+          <Info icon="cil-location-pin">Stockholm, Sweden</Info>
+          <Info icon="cil-phone">+46 70 491 17 76</Info>
+          <a href="mailto:ahlback.emil@gmail.com">
+            <Info icon="cil-envelope-closed">emil@neostack.io</Info>
+          </a>
+          <a href="https://github.com/follgad">
+            <Info icon="cib-github">github.com/follgad</Info>
+          </a>
+          <a href="https://linkedin.com/in/emil-ahlback">
+            <Info icon="cib-linkedin">linkedin.com/in/emil-ahlback</Info>
+          </a>
+          <a href="https://twitter.com/emilahlback">
+            <Info icon="x">@emilahlback</Info>
+          </a>
+        </div>
+        <div>
+          <p className="mt-2">
+            My name is Emil, I am a developer with a passion for
+            entrepreneurship and problem solving in real world applications.
+          </p>
+
+          <p className="mt-2">
+            I have a wide background in Software Engineering and Machine
+            Learning. I have for companies ranging from small startups to large
+            corporations. I have also started and run my own companies.
+          </p>
+
+          <p className="mt-2">
+            Currently looking for: Roles in Engineering and Research within the
+            field of AI.
+          </p>
+
+          <p className="mt-2">
+            Outside of work I enjoy running, reading and climbing.
+          </p>
+        </div>
       </div>
     </div>
 
     <div className="flex flex-wrap">
       <div className="flex-1 px-4" style={{ flexBasis: "30%" }}>
         <ExperienceList name="Experience">
+          <Experience
+            mainTitle="Software Engineer — Godmode"
+            from="Mar 2022"
+            to="2023"
+            tags={["Nest.js", "Next.js", "React", "GCP", "Typscript"]}
+          >
+            <p>
+              Dework was a decentralized work platform that aimed to
+              revolutionize how work is done. As a full-stack engineer I worked
+              together with the founding engineer to build the platform from the
+              ground up.
+            </p>
+            <p>
+              The company later pivoted into Godmode, a B2B platform for AI
+              Agents. There I also worked as a full-stack engineer.
+            </p>
+          </Experience>
           <Experience
             mainTitle="Software Consultant — Self employed"
             from="Oct 2021"
@@ -56,39 +85,19 @@ const IndexPage = () => (
           >
             <p>
               Worked for a variety of clients, from startups to large
-              corporations.
+              corporations. I also joined the Toptal network in 2021, an
+              exclusive network of the top 3% of freelance developers.
             </p>
-            <p>Clients include:</p>
+            <p className="mt-2 italic">My clients include:</p>
             <ul className="list-disc pl-4">
-              <li>
-                a New York fintech startup{" "}
-                <a className="text-blue-600" href="https://array.com">
-                  Array
-                </a>{" "}
-                (Senior Software Engineer)
-              </li>
               <li>
                 Signet Jewelers, the world's largest online jewelry retailer (AI
                 Engineer)
               </li>
               <li>
-                Godmode.space V2, a B2B platform for AI agents (AI Engineer)
+                Array, a New York fintech startup (Senior Software Engineer)
               </li>
             </ul>
-          </Experience>
-          <Experience
-            mainTitle="Software Engineer — Dework"
-            from="Mar 2022"
-            to="Dec 2022"
-            tags={["Nest.js", "Next.js", "React", "GCP", "Typscript"]}
-            location="Remote"
-          >
-            <p>
-              Dework is a decentralized work platform that aims to revolutionize
-              how work is done. As a full-stack engineer I've been working
-              together with the founding engineer to build the platform from the
-              ground up.
-            </p>
           </Experience>
           <Experience
             mainTitle="Developer — Depict"
@@ -101,22 +110,22 @@ const IndexPage = () => (
             <p>I was one of two members of the frontend team at Depict.</p>
             <Sublist>
               <SublistItem>
-                Daily pushed code that reached millions of users through
-                e-commerce websites in Sweden and worldwide
+                I pushed code daily that reached millions of users through
+                e-commerce websites based in Sweden and worldwide.
               </SublistItem>
               <SublistItem>
                 Designed and developed their email recommendation system from
-                scratch
+                scratch.
               </SublistItem>
               <SublistItem>
-                Led the development of the dashboard for their customers.
-                Written in React and Next.js
+                Led the development of the analytics dashboard for their
+                customers.
               </SublistItem>
               <SublistItem>
                 Improved DX by automating the deployment process, helping
                 transition the entire codebase to Typescript, and creating a
                 library allowing compile-time JSX to allow writing fast and
-                efficient React-style code
+                efficient React-style code.
               </SublistItem>
             </Sublist>
           </Experience>
@@ -136,7 +145,7 @@ const IndexPage = () => (
             </p>
           </Experience>
           <Experience
-            mainTitle="Co-founder, Full-stack developer — TenFAST"
+            mainTitle="Co-founder & CTO — TenFAST"
             from="2018"
             to="2020"
             link="https://tenfast.se"
@@ -179,12 +188,11 @@ const IndexPage = () => (
               variety of web applications for clients:
               <Sublist>
                 <SublistItem>
-                  Sjukvårdskonsulterna, a consulting firm in the healthcare
-                  sector for whom we built their entire web system, handling
-                  millions of SEK in revenue.
+                  A consulting firm in the healthcare sector for whom we built
+                  their entire web system, handling millions of SEK in revenue.
                 </SublistItem>
-                <SublistItem>Web-based video rendering programs</SublistItem>
-                <SublistItem>A hotel booking system</SublistItem>
+                <SublistItem>Web-based video rendering programs.</SublistItem>
+                <SublistItem>A hotel booking system.</SublistItem>
               </Sublist>
             </p>
           </Experience>
@@ -219,18 +227,21 @@ const IndexPage = () => (
             tags={["OpenAI", "GPT-4", "React", "Python"]}
           >
             <p>
-              I developed the first web-based platform for AI Agents. We reached
-              1M users over the first three months{" "}
+              I developed the first web-based platform for AI Agents{" "}
               <span className="text-blue-600">
                 <a
                   href="https://twitter.com/_Lonis_/status/1646641412182536196"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  [twitter]
+                  [twitter post]
                 </a>
               </span>
               .
+            </p>
+            <p>
+              <strong>1M+</strong> users in the first 3 months.{" "}
+              <strong>500k+</strong> agents created.
             </p>
           </Experience>
           <Experience
