@@ -6,7 +6,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <>
-      <Header siteTitle="follgad" />
+      <Header siteTitle="Emil Ahlbäck" />
       <div className="container mx-auto content-container">
         <main>{children}</main>
         {/* <footer>

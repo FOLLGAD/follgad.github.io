@@ -12,12 +12,12 @@ const Header = ({ siteTitle }: HeaderProps) => {
     return router.pathname === path;
   };
 
-  const activeClass =
-    "mx-2 px-2 py-1 text-decoration-none text-gray-200 underline";
-  const inactiveClass = "mx-2 px-2 py-1 text-decoration-none text-gray-200";
+  const activeClassBtn =
+    "mx-2 px-4 py-2 rounded-lg text-decoration-none text-gray-200 underline hover:text-gray-300 bg-blue-900";
+  const inactiveClassBtn = "mx-2 px-4 py-2 rounded-lg text-decoration-none text-gray-200 hover:text-gray-300 bg-blue-900";
 
   return (
-    <header className="print:hidden bg-blue-700 mb-4">
+    <header className="print:hidden bg-blue-800 mb-4">
       <div className="flex container mx-auto justify-between">
         <div className="p-4">
           <span className="text-decoration-none text-gray-200 text-2xl font-semibold">
@@ -26,16 +26,16 @@ const Header = ({ siteTitle }: HeaderProps) => {
         </div>
 
         <div className="my-auto flex">
-          <span className={isActive("/") ? activeClass : inactiveClass}>
+          <button className={isActive("/") ? activeClassBtn : inactiveClassBtn}>
             <Link href="/">Resume</Link>
-          </span>
-          <span className={inactiveClass}>
+          </button>
+          <button className={inactiveClassBtn}>
             <Link href="https://linkedin.com/in/emil-ahlback">
               <a target="_blank" rel="noopener noreferrer">
                 About me
               </a>
             </Link>
-          </span>
+          </button>
         </div>
       </div>
     </header>

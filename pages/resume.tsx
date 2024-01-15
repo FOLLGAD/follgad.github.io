@@ -260,16 +260,16 @@ const IndexPage = () => (
                 >
                   developed and open-sourced a service
                 </a>{" "}
-                to automate video editing
+                to automate video editing.
               </SublistItem>
               <SublistItem>
-                Cut down the time required to below 15 min per video (decreased
-                by over 80%) while simultaneously improving the viewer
-                experience
+                Cut down the time required by <strong>90%</strong>{" "}
+                (&lt;15min/video) while simultaneously improving the viewer
+                experience.
               </SublistItem>
               <SublistItem>
-                This enabled us to go from 0 subscribers and views to 100k
-                subscribers and 40 million views in under a year.
+                Reached <strong>100k</strong> subscribers and{" "}
+                <strong>40 million</strong> views in under a year of starting.
               </SublistItem>
             </Sublist>
           </Experience>
