@@ -48,7 +48,7 @@ const IndexPage = () => (
           </div>
         </div>
 
-        <ExperienceList name="Experience">
+        <ExperienceList name="Experience & Projects">
           <Experience
             mainTitle="Software Engineer — Godmode"
             from="Mar 2022"
