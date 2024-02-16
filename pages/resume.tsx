@@ -70,6 +70,8 @@ const IndexPage = () => (
             mainTitle="Godmode ⚡️"
             link="https://godmode.space"
             tags={["OpenAI", "GPT-4", "React", "Python"]}
+            from="Apr 2023"
+            to="Apr 2023"
           >
             <p>
               I developed the first ever web-based platform for AI Agents
@@ -114,6 +116,17 @@ const IndexPage = () => (
               </li>
             </ul>
           </Experience>
+          {/* <Experience
+            mainTitle="Sherlock 🕵️"
+            link="https://github.com/FOLLGAD/sherlock"
+            tags={["OpenAI", "Function Calling", "Embedded"]}
+            from="Feb 2023"
+            to="Feb 2023"
+          >
+            <p>
+              I developed a chat-based AI agent that could fully control my home automation system using sandboxed Python instances (before ChatGPT added function calling).
+            </p>
+          </Experience> */}
           <Experience
             mainTitle="Developer — Depict"
             from="Mar 2021"
