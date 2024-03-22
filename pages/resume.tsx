@@ -42,15 +42,14 @@ const IndexPage = () => (
           <div>
             <p>
               My name is Emil, I'm a Software Engineer with skills in
-              full-stack, AI and entrepreneurship. Currently looking for roles
-              in AI.
+              full-stack, AI and entrepreneurship.
             </p>
           </div>
         </div>
 
         <ExperienceList name="Experience & Projects">
           <Experience
-            mainTitle="Software Engineer — Godmode"
+            mainTitle="Founding Engineer — Godmode"
             from="Mar 2022"
             to="Jan 2024"
             tags={["Nest.js", "Next.js", "React", "GCP", "Typscript"]}
@@ -128,14 +127,14 @@ const IndexPage = () => (
             </p>
           </Experience> */}
           <Experience
-            mainTitle="Developer — Depict"
+            mainTitle="Developer — Depict (YC S20)"
             from="Mar 2021"
             to="Sep 2021"
             link="https://depict.ai"
             tags={["Typescript", "GCP", "Node.js", "Python", "Docker"]}
             location="Stockholm"
           >
-            <p>I was one of two members of the frontend team at Depict.</p>
+            <p>I was the seventh hire at Depict (YC S20).</p>
             <Sublist>
               <SublistItem>
                 I pushed code daily that reached <b>millions</b> of users
