@@ -19,10 +19,16 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Emil Ahlbäck</title>
         <link rel="canonical" href="https://emil.zip" />
 
-        <meta name="description" content="Emil Ahlbäck" />
         <meta name="author" content="Emil Ahlbäck" />
+        <meta name="description" content="Emil Ahlbäck's personal website." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
+
+        <meta property="og:title" content="Emil Ahlbäck" />
+        <meta property="og:description" content="Emil Ahlbäck's personal website." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://emil.zip" />
+        <meta property="og:image" content="https://emil.zip/static/og-image.png" />
         
         <link rel="icon" href="/static/favicon.png" />
       </Head>
