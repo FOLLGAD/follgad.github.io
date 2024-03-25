@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "_build": "next build && next export",
+    "build": "npm run _build && rm -rf docs && cp -r out docs && touch docs/.nojekyll",
     "start": "next start",
     "lint": "next lint"
   },
