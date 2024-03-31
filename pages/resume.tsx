@@ -55,14 +55,10 @@ const IndexPage = () => (
             tags={["Nest.js", "Next.js", "React", "GCP", "Typscript"]}
           >
             <p>
-              Dework was a decentralized work platform that aimed to
-              revolutionize how work is done. As a full-stack engineer I worked
-              together with the founding engineer to build the platform from the
-              ground up.
-            </p>
-            <p>
-              The company later pivoted into Godmode, a B2B platform for AI
-              Agents. There I also worked as a full-stack engineer.
+              Godmode is a B2B platform for AI Agents. I worked here as a
+              full-stack engineer, building the platform together with the CTO,
+              integrating the agents with third-party tools and hacking on
+              greenfield products.
             </p>
           </Experience>
           <Experience
