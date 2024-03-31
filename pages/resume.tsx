@@ -51,7 +51,7 @@ const IndexPage = () => (
           <Experience
             mainTitle="Founding Engineer — Godmode"
             from="Mar 2022"
-            to="Jan 2024"
+            // to="Jan 2024"
             tags={["Nest.js", "Next.js", "React", "GCP", "Typscript"]}
           >
             <p>
