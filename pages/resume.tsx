@@ -88,6 +88,17 @@ const IndexPage = () => (
             <p>
               <strong>500k+</strong> agents created.
             </p>
+            <p>
+              Featured in{" "}
+              <a
+                href="https://www.cnbc.com/2023/07/07/three-ai-tools-to-make-you-more-efficient-at-work.html#:~:text=Godmode%20%C2%A0,it%20for%20research."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                [CNBC]
+              </a>
+              .
+            </p>
           </Experience>
           <Experience
             mainTitle="Software Consultant — Self employed"
